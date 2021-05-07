@@ -73,7 +73,7 @@ updateBtn.addEventListener('click', e => {
 function getTodos(){
     todolist.innerHTML='';
     currentUser=auth.currentUser;
-    document.querySelector('#user-email').innerHTML=(currentUser !=null ? currentUser.email : '');
+//     document.querySelector('#user-email').innerHTML=(currentUser !=null ? currentUser.email : '');
     if(currentUser==null){
         todolist.innerHTML='<h3 class="center-align">Please Login To Continue</h3>';
         return;
