@@ -65,7 +65,7 @@ form.addEventListener('submit',e=>{
 updateBtn.addEventListener('click', e => {
     e.preventDefault();
     newTitle = document.getElementsByName('newtitle')[0].value;
-   db.collection('alltodos').doc(currentUser.uid).collection('todos')('todos').doc(updateId).update({
+    db.collection('alltodos').doc(currentUser.uid).collection('todos').doc(updateId).update({
         title: newTitle
     })
 })
